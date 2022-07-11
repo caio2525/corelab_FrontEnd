@@ -1,0 +1,26 @@
+.entrada{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.label{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.input{
+  width: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 30px;
+  background: #FFFFFF;
+  border: 1px solid rgba(239, 239, 239, 0.6);
+  border-radius: 100px;
+  padding-left: 25px;
+}

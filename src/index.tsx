@@ -4,12 +4,26 @@ import './index.module.scss';
 import VehiclesPage from './pages/Vehicles';
 import reportWebVitals from './reportWebVitals';
 
+import {FormProvider} from './providers/FormProvider';
+import {FiltersProvider} from './providers/FiltersProvider';
+
+
+import FormPage from './pages/Form';
+import FiltersPage from './pages/Filters';
+import MainPage from './pages/Main'
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <VehiclesPage />
+
+      <FormProvider>
+        <FiltersProvider>
+          <MainPage />
+        </FiltersProvider>
+      </FormProvider>
+
   </React.StrictMode>
 );
 
